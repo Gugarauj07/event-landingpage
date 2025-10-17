@@ -23,13 +23,10 @@ export function AboutCard({ title, description, subTitle }: AboutCardProp) {
         </Typography>
         <Typography
           color="white"
-          className="mt-2 mb-10 text-base w-full lg:w-8/12 text-center font-normal"
+          className="mt-2 text-base w-full lg:w-8/12 text-center font-normal"
         >
           {description}
         </Typography>
-        <Button color="white" size="sm">
-          view details
-        </Button>
       </CardBody>
     </Card>
   );

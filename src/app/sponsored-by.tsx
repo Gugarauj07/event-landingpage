@@ -4,12 +4,30 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const SPONSORS = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
-  "amazon",
-  "netflix",
+  {
+    name: "UFAM",
+    src: "/assets/UFAM_logo.png",
+  },
+  {
+    name: "ICE",
+    src: "/assets/ICE_logo.png",
+  },
+  {
+    name: "DEGEO",
+    src: "/assets/DEGEO_logo.png",
+  },
+  {
+    name: "UNESCO",
+    src: "/assets/UNESCO_logo.svg",
+  },
+  {
+    name: "IPAM",
+    src: "/assets/IPAM_white-logo.svg",
+  },
+  {
+    name: "UEA",
+    src: "/assets/UEA_logo.png",
+  },
 ];
 
 export function SponsoredBy() {
@@ -17,18 +35,19 @@ export function SponsoredBy() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto text-center">
         <Typography variant="h6" color="blue-gray" className="mb-8">
-          SPONSORED BY
+          REALIZAÇÃO
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {SPONSORS.map((logo, key) => (
-            <Image
-              width={256}
-              height={256}
-              key={key}
-              src={`/logos/logo-${logo}.svg`}
-              alt={logo}
-              className="w-40"
-            />
+            <div key={key} className={logo.name === "IPAM" ? "p-4 rounded-full bg-gray-900" : "p-0"}>
+              <Image
+                width={256}
+                height={256}
+                src={logo.src}
+                alt={logo.name}
+                className="w-40 h-auto"
+              />
+            </div>
           ))}
         </div>
       </div>

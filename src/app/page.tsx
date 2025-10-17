@@ -5,9 +5,9 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import SponsoredBy from "./sponsored-by";
 import AboutEvent from "./about-event";
-import OurStats from "./our-stats";
 import EventContent from "./event-content";
 import Faq from "./faq";
+import Localizacao from "./section-localizacao";
 
 export default function Portfolio() {
   return (
@@ -16,8 +16,8 @@ export default function Portfolio() {
       <Hero />
       <SponsoredBy />
       <AboutEvent />
-      <OurStats />
       <EventContent />
+      <Localizacao />
       <Faq />
       <Footer />
     </>

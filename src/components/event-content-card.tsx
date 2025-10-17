@@ -53,12 +53,6 @@ export function EventContentCard({
           {des}
         </Typography>
         <div className="flex items-center gap-4">
-          <Avatar
-            variant="circular"
-            src="/logos/spotify-logo.png"
-            alt="spotify"
-            size="lg"
-          />
           <div>
             <Typography variant="h6" color="blue-gray" className="mb-0.5">
               {name}

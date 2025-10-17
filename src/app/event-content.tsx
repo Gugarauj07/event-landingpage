@@ -11,45 +11,42 @@ import EventContentCard from "@/components/event-content-card";
 
 const EVENT_CONTENT = [
   {
-    title: "AI's Role in Shaping the Future",
-    des: "Discover how AI is revolutionizing industries, creating new possibilities, and addressing global challenges. Gain a deep understanding of the pivotal role AI plays in driving innovation, sustainability, and progress in our rapidly evolving world.",
-    name: "Marcell Glock",
-    position: "Chief Executive, Spotify",
-    panel: "Panel Discussion",
+    title: "Programa Internacional Geociência e Geoparques UNESCO",
+    des: "Conferência sobre integração de conservação, ciência e comunidades no contexto dos Geoparques UNESCO, apresentando experiências internacionais e metodologias aplicadas.",
+    name: "José Bernardo Brilha",
+    position: "Universidade de Minho, Portugal",
+    panel: "Conferência",
     img: "/image/avatar1.jpg",
   },
   {
-    title: "Introduction to Machine Learning",
-    des: "Explore the basic principles, algorithms, and applications of Machine Learning. Through hands-on exercises and practical examples, you'll develop a solid understanding of how Machine Learning powers AI-driven solutions.",
-    name: "Marcell Glock",
-    position: "Chief Executive, Spotify",
-    panel: "Workshop",
+    title: "Povos Originários e a Proteção do Território",
+    des: "Palestra sobre a importância dos povos indígenas na proteção e conservação do território amazônico, destacando saberes tradicionais e práticas de gestão territorial.",
+    name: "Representantes dos Povos Indígenas",
+    position: "Programa Waimiri Atroari",
+    panel: "Palestra",
     img: "/image/avatar2.jpg",
   },
   {
-    title: "AI in Healthcare: Revolutionizing Patient Care",
-    des: "This session is a must-attend for healthcare professionals, AI enthusiasts, and anyone interested in the intersection of technology and well-being. Join us as we discuss how AI is bringing about positive changes in healthcare.",
-    name: "Marcell Glock",
-    position: "Chief Executive, Spotify",
-    panel: "Workshop",
+    title: "Inventário Integrado: Mapeando o Patrimônio",
+    des: "Apresentação do inventário integrado do patrimônio geocientífico, cultural e turístico de Presidente Figueiredo, metodologia e resultados preliminares.",
+    name: "Raimundo Humberto C. Lima",
+    position: "PPGGEO/UFAM",
+    panel: "Palestra",
     img: "/image/avatar3.jpg",
   },
 ];
 
 export function EventContent() {
   return (
-    <section className="py-8 px-8 lg:py-20">
+    <section id="programacao" className="py-8 px-8 lg:py-20">
       <Tabs value="Day1" className="mb-8">
         <div className="w-full flex mb-8 flex-col items-center">
           <TabsHeader className="h-12 w-72 md:w-96">
             <Tab value="Day1" className="font-medium">
-              Day 1
+              Dia 1
             </Tab>
             <Tab value="Day2" className="font-medium">
-              Day 2
-            </Tab>
-            <Tab value="Day3" className="font-medium">
-              Day 3
+              Dia 2
             </Tab>
           </TabsHeader>
         </div>
