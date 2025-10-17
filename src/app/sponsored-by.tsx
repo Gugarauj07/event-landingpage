@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
 
 const SPONSORS = [
   {
@@ -34,9 +33,9 @@ export function SponsoredBy() {
   return (
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto text-center">
-        <Typography variant="h6" color="blue-gray" className="mb-8">
+        <h6 className="mb-8 text-lg font-semibold text-gray-800">
           REALIZAÇÃO
-        </Typography>
+        </h6>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {SPONSORS.map((logo, key) => (
             <div key={key} className={logo.name === "IPAM" ? "p-4 rounded-full bg-gray-900" : "p-0"}>

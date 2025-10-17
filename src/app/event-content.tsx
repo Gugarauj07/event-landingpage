@@ -1,11 +1,5 @@
 "use client";
 
-import {
-  Tab,
-  Tabs,
-  TabsHeader,
-} from "@material-tailwind/react";
-
 import EventContentCard from "@/components/event-content-card";
 
 
@@ -39,18 +33,16 @@ const EVENT_CONTENT = [
 export function EventContent() {
   return (
     <section id="programacao" className="py-8 px-8 lg:py-20">
-      <Tabs value="Day1" className="mb-8">
-        <div className="w-full flex mb-8 flex-col items-center">
-          <TabsHeader className="h-12 w-72 md:w-96">
-            <Tab value="Day1" className="font-medium">
-              Dia 1
-            </Tab>
-            <Tab value="Day2" className="font-medium">
-              Dia 2
-            </Tab>
-          </TabsHeader>
+      <div className="w-full flex mb-8 flex-col items-center">
+        <div className="h-12 w-72 md:w-96 bg-gray-100 rounded-lg p-1 flex">
+          <button className="flex-1 bg-white rounded-md font-medium shadow-sm">
+            Dia 1
+          </button>
+          <button className="flex-1 font-medium text-gray-600">
+            Dia 2
+          </button>
         </div>
-      </Tabs>
+      </div>
       <div className="mx-auto container">
         {EVENT_CONTENT.map((props, idx) => (
           <EventContentCard key={idx} {...props} />

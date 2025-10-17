@@ -1,5 +1,5 @@
 
-import { Typography, Card } from "@material-tailwind/react";
+// Removido Material Tailwind para evitar erros de tipagem
 interface StatsCardProps {
   count: string;
   title: string;
@@ -7,14 +7,14 @@ interface StatsCardProps {
 
 export function StatsCard({ count, title }: StatsCardProps) {
   return (
-    <Card color="transparent" shadow={false}>
-      <Typography variant="h1" className="font-bold" color="blue-gray">
+    <div>
+      <h1 className="font-bold text-4xl text-gray-800">
         {count}
-      </Typography>
-      <Typography variant="h6" color="blue-gray" className="mt-1 font-medium">
+      </h1>
+      <h6 className="mt-1 font-medium text-lg text-gray-600">
         {title}
-      </Typography>
-    </Card>
+      </h6>
+    </div>
   );
 }
 
