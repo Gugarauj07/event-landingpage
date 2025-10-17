@@ -21,21 +21,18 @@ const EVENT_INFO = [
 export function AboutEvent() {
   return (
     <section id="sobre" className="container mx-auto flex flex-col items-center px-4 py-10">
-      <Typography variant="h6" className="text-center mb-2" color="orange">
+      <h6 className="text-center mb-2 text-orange-500 font-semibold">
         Sobre o evento
-      </Typography>
-      <Typography variant="h3" className="text-center" color="blue-gray">
+      </h6>
+      <h3 className="text-center text-3xl font-bold text-gray-800">
         Por que Participar?
-      </Typography>
-      <Typography
-        variant="lead"
-        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
-      >
-        O evento "Diálogos Amazônicos: Plano de Ação da Geodiversidade" é uma iniciativa 
+      </h3>
+      <p className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal text-gray-500 text-lg">
+        O evento &quot;Diálogos Amazônicos: Plano de Ação da Geodiversidade&quot; é uma iniciativa 
         pioneira no Brasil que busca articular conhecimento científico, gestão territorial 
         e participação comunitária, promovendo estratégias colaborativas que valorizem 
         a geodiversidade amazônica.
-      </Typography>
+      </p>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />

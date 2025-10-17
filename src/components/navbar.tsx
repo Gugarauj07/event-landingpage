@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   InformationCircleIcon,
   CalendarDaysIcon,
@@ -59,7 +60,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#" className="flex items-center gap-2">
-          <img src="/assets/icon.png" alt="Logo" className="h-6 w-6" />
+          <Image src="/assets/icon.png" alt="Logo" width={24} height={24} className="h-6 w-6" />
           <span className={`text-lg font-bold ${isScrolling ? "text-gray-900" : "text-white"}`}>
             Diálogos Amazônicos
           </span>
